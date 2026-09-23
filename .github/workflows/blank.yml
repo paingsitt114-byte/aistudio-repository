@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+- name: Upload APK
+  uses: actions/upload-artifact@v4
+  with:
+    name: app-release
+    path: app/build/outputs/apk/release/app-release.apk # (ကိုယ့်ရဲ့ apk ဖိုင်ထွက်မယ့် နေရာလမ်းကြောင်းအတိုင်း ပြင်ပေးရပါမယ်)
+    
